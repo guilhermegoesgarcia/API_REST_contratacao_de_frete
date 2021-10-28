@@ -10,6 +10,8 @@ class CadastroEmpresa(models.Model):
     active = models.BooleanField()
     site = models.CharField(max_length=100)
 
+    objects = models.Manager()
+
     def __str__(self):
         return self.name
 
@@ -19,6 +21,8 @@ class CadastroCliente(models.Model):
     about = models.CharField(max_length=250)
     active = models.BooleanField()
     site = models.CharField(max_length=100)
+
+    objects = models.Manager()
 
     def __str__(self):
         return self.name
@@ -32,6 +36,8 @@ class CadastroOferta(models.Model):
     amount = models.CharField(max_length=20)
     amount_type = models.CharField(max_length=10, blank=False)
 
+    objects = models.Manager()
+
     def __str__(self):
         return self.id_customer
 
@@ -40,6 +46,8 @@ class Lance(models.Model):
     id_offer = models.ForeignKey(CadastroEmpresa, on_delete=models.SET_DEFAULT,default=1) #mudar para ID
     value = models.CharField(max_length=20)
     amount = models.CharField(max_length=20)
+
+    objects = models.Manager()
 
     def __str__(self):
         return self.value

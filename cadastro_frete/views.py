@@ -16,10 +16,10 @@ class CadastroCliente_ViewSet(viewsets.ModelViewSet):
     serializer_class = CadastroCliente_Serializer
 
 class CadastroOferta_ViewSet(viewsets.ModelViewSet):
-    queryset = CadastroOferta_Serializer
-    serializer_class = CadastroOferta_Serializer.objects.all()
+    queryset = CadastroOferta_Serializer.objects.all()
+    serializer_class = CadastroOferta_Serializer
 
 class Lance_ViewSet(viewsets.ModelViewSet):
-    queryset = Lance_Serializer
-    serializer_class = Lance_Serializer.objects.all()
+    queryset = Lance_Serializer.objects.all()
+    serializer_class = Lance_Serializer
 
