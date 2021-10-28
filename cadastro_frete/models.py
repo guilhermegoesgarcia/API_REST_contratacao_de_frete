@@ -39,7 +39,7 @@ class CadastroOferta(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return self.id_customer
+        return self.from_de #mudar para id
 
 class Lance(models.Model):
     id_provider = models.ForeignKey(CadastroCliente, on_delete=models.SET_DEFAULT,default=1) #mudar para ID
