@@ -24,10 +24,10 @@ class CadastroCliente(models.Model):
         return self.name
 
 
-class CadastroOferta(models.model):
+class CadastroOferta(models.Model):
     id_customer = models.ForeignKey(CadastroCliente, on_delete=models.SET_DEFAULT,default=1) # mudar para ID
-    from_ = models.CharField(max_length=20, blank=False)
-    to_ = models.CharField(max_length=20, blank=False)
+    from_de = models.CharField(max_length=20, blank=False)
+    to_para = models.CharField(max_length=20, blank=False)
     initial_value = models.CharField(max_length=20)
     amount = models.CharField(max_length=20)
     amount_type = models.CharField(max_length=10, blank=False)
