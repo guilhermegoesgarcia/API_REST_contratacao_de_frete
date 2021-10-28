@@ -40,3 +40,6 @@ class Lance(models.Model):
     id_offer = models.ForeignKey(CadastroEmpresa, on_delete=models.SET_DEFAULT,default=1) #mudar para ID
     value = models.CharField(max_length=20)
     amount = models.CharField(max_length=20)
+
+    def __str__(self):
+        return self.value
