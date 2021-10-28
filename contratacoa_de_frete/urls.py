@@ -18,6 +18,13 @@ from django.urls import path, include
 from rest_framework import routers
 from cadastro_frete.views import CadastroEmpresa_ViewSet,CadastroCliente_ViewSet,CadastroOferta_ViewSet,Lance_ViewSet
 
+router = routers.DefaultRouter()
+router.register('cadastro-empresa', CadastroEmpresa_ViewSet)
+router.register('cadastro-cliente', CadastroCliente_ViewSet)
+router.register('cadastro-oferta', CadastroOferta_ViewSet)
+router.register('lance', Lance_ViewSet)
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include(router.urls)),
 ]
