@@ -40,7 +40,7 @@ Este projeto foi desenvolvido usando as seguintes tecnologias:
   
 ## Oportunidades de melhoria:
   
-  • Criação de usuários com diferentes niveis de acesso;
-  • Implementação de filtros de buscas;
-  • Deploy da aplicação usando Heroku;
-  • Integração da api com um front-end amigavel. 
+    • Criação de usuários com diferentes niveis de acesso;
+    • Implementação de filtros de buscas;
+    • Deploy da aplicação usando Heroku;
+    • Integração da api com um front-end amigavel. 
