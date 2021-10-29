@@ -4,7 +4,7 @@ from django.db import models
 
 class CadastroEmpresa(models.Model):
 
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50, default='Sem_Nome_Cadastrado')
     doc = models.CharField(max_length=14, unique=True, blank=False)
     about = models.CharField(max_length=250)
@@ -17,7 +17,7 @@ class CadastroEmpresa(models.Model):
         return str(self.id)
 
 class CadastroCliente(models.Model):
-    id = models.IntegerField(primary_key=True)
+    id = models.AutoField(primary_key=True)
     name = models.CharField(max_length=50, default='Sem_Nome_Cadastrado')
     doc = models.CharField(max_length=14, unique=True, blank=False)
     about = models.CharField(max_length=250)
