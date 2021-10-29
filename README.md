@@ -33,8 +33,8 @@ Este projeto consiste no desenvolvimento de uma API voltado para contratação d
 Este projeto foi desenvolvido usando as seguintes tecnologias:
     
     • Python 3
+    • Django 
     • Django REST framework
-    • Django Cors Headers
     • SQLite
   
   
