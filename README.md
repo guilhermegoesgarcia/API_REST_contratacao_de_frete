@@ -15,7 +15,7 @@
 ## Descrição:
 
 
-Este projeto consiste no desenvolvimento de uma API voltado para contratação de frete para entregas de mercadorias. Desta forma deve ser capaz de cadastrar e obter informações de Empresas, Clientes, Ofertas e Lances. O prazo estipulado para este projeto foi de apenas 48h corridas, devido ao prazo apertado ao final existira um tópico apresentando os pontos de melhorias para próximas etapas.
+Este projeto consiste no desenvolvimento de uma API voltado para contratação de frete para entregas de mercadorias. Desta forma deve ser capaz de cadastrar e obter informações de Empresas, Clientes, Ofertas e Lances. O prazo estipulado para este projeto foi de apenas 48h corridas, devido ao prazo apertado ao final existirá um tópico apresentando os pontos de melhorias para próximas etapas.
 
    ### Principais funcionalidades
 
