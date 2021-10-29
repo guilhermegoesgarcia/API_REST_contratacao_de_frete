@@ -4,6 +4,7 @@ from django.db import models
 
 class CadastroEmpresa(models.Model):
 
+    id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=50, default='Sem_Nome_Cadastrado')
     doc = models.CharField(max_length=14, unique=True, blank=False)
     about = models.CharField(max_length=250)
@@ -13,9 +14,10 @@ class CadastroEmpresa(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return self.name
+        return str(self.id)
 
 class CadastroCliente(models.Model):
+    id = models.IntegerField(primary_key=True)
     name = models.CharField(max_length=50, default='Sem_Nome_Cadastrado')
     doc = models.CharField(max_length=14, unique=True, blank=False)
     about = models.CharField(max_length=250)
@@ -25,7 +27,7 @@ class CadastroCliente(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return self.name
+        return str(self.id)
 
 
 class CadastroOferta(models.Model):
