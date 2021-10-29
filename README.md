@@ -15,15 +15,17 @@
 ## Descrição:
 
 
-Este projeto consiste no desenvolvimento de uma API voltado para contratação de frete para entregas de mercadorias. Desta forma deve ser capaz de cadastrar e obter informações de Empresas, Clientes, Ofertas e Lances.
+Este projeto consiste no desenvolvimento de uma API voltado para contratação de frete para entregas de mercadorias. Desta forma deve ser capaz de cadastrar e obter informações de Empresas, Clientes, Ofertas e Lances. O prazo estipulado para este projeto foi de apenas 48h corridas, devido ao prazo apertado ao final existira uma resalva para proximas etapas de implementação e melhoria para este projeto.
 
    ### Principais funcionalidades
 
 
     • API com rotas implementadas segundo o padrão REST;
-    • Validações feitas conforme as regras de negócio; 
+    • Validações feitas conforme as regras de negócio (CNPJ, Site); 
     • Implementação de base de dados para persistência das informações;    
-    • Serviço de autenticação para acesso às rotas GET, POST, PUT e DELETE    
+    • Serviço de autenticação para acesso às rotas GET, POST, PUT e DELETE;
+    • Implantação de metodos voltados a segurança da Secret Key
+   
     
     
 ## Tecnologias utilizadas:
@@ -38,3 +40,4 @@ Este projeto foi desenvolvido usando as seguintes tecnologias:
   
 ## Próximos passos:    
     
+  
