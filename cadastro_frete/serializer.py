@@ -9,12 +9,20 @@ class CadastroEmpresa_Serializer(serializers.ModelSerializer):
     def validate(self, data):
         if not cnpj_valido(data['doc']):
             raise serializers.ValidationError({'doc': "Número de CNPJ inválido"})
+        if not site_valido(data['site']):
+            raise serializers.ValidationError({'site': "Endereço de SITE inválido"})
         return data
 
 class CadastroCliente_Serializer(serializers.ModelSerializer):
     class Meta:
         model = CadastroCliente
         fields = '__all__'
+    def validate(self, data):
+        if not cnpj_valido(data['doc']):
+            raise serializers.ValidationError({'doc': "Número de CNPJ inválido"})
+        if not site_valido(data['site']):
+            raise serializers.ValidationError({'site': "Endereço de SITE inválido"})
+        return data
 
 class CadastroOferta_Serializer(serializers.ModelSerializer):
     class Meta:
