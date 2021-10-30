@@ -1,1 +1,1 @@
-web: gunicorn setup.wsgi --log-file -
+web: gunicorn contratacoa_de_frete.wsgi --log-file -
