@@ -17,13 +17,7 @@
 
 Este projeto consiste no desenvolvimento de uma API voltado para contratação de frete para entregas de mercadorias. Desta forma deve ser capaz de cadastrar e obter informações de Empresas, Clientes, Ofertas e Lances. O prazo estipulado para este projeto foi de apenas 48h corridas, devido ao prazo apertado ao final existirá um tópico apresentando os pontos de melhorias para próximas etapas.
   
-  ### Teste a API:
-  
- Acesse a API: https://contratacao-de-frete.herokuapp.com/
  
- Acesse a área do Cliente Admin: https://contratacao-de-frete.herokuapp.com/admin/
- <br/>**login:** teste<br/>
- **senha:** 123teste
 
    ### Principais funcionalidades
 
@@ -34,6 +28,16 @@ Este projeto consiste no desenvolvimento de uma API voltado para contratação d
     • Serviço de autenticação para acesso às rotas GET, POST, PUT e DELETE;
     • Implantação de metodos voltados a segurança da Secret Key
    
+  
+## Teste a API:
+  
+Para o deploy desta API foi escolhido o servidor Heroku.
+  
+ - Acesse: https://contratacao-de-frete.herokuapp.com/
+ 
+ - Acesse a área do Cliente Admin: https://contratacao-de-frete.herokuapp.com/admin/
+ <br/>**login:** teste<br/>
+ **senha:** 123teste
     
     
 ## Tecnologias utilizadas:
