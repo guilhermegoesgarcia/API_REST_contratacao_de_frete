@@ -44,5 +44,4 @@ Este projeto foi desenvolvido usando as seguintes tecnologias:
   
     • Criação de usuários com diferentes níveis de acesso;
     • Implementação de filtros de buscas;
-    • Deploy da aplicação usando Heroku;
     • Integração da api com front-end amigável. 
