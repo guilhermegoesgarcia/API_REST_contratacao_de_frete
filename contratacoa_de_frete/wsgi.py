@@ -11,6 +11,6 @@ import os
 from dj_static import Cling
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'setup.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'contratacoa_de_frete.settings')
 
 application = Cling(get_wsgi_application())
