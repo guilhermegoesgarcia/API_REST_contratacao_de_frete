@@ -21,7 +21,7 @@ Este projeto consiste no desenvolvimento de uma API voltado para contratação d
   
  Acesse a API: https://contratacao-de-frete.herokuapp.com/
  
- Acesse a area do cliente: https://contratacao-de-frete.herokuapp.com/admin/
+ Acesse a área do Cliente Admin: https://contratacao-de-frete.herokuapp.com/admin/
  <br/>**login:** teste<br/>
  **senha:** 123teste
 
