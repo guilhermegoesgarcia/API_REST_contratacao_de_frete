@@ -31,7 +31,7 @@ class CadastroCliente(models.Model):
 
 
 class CadastroOferta(models.Model):
-    id_customer = models.ForeignKey(CadastroCliente, on_delete=models.SET_DEFAULT,default=1) # mudar para ID
+    id_customer = models.ForeignKey(CadastroCliente, on_delete=models.SET_DEFAULT,default=1)
     from_de = models.CharField(max_length=20, blank=False)
     to_para = models.CharField(max_length=20, blank=False)
     initial_value = models.FloatField(max_length=20)
@@ -41,11 +41,11 @@ class CadastroOferta(models.Model):
     objects = models.Manager()
 
     def __str__(self):
-        return self.from_de #mudar para id
+        return self.from_de
 
 class Lance(models.Model):
-    id_provider = models.ForeignKey(CadastroCliente, on_delete=models.SET_DEFAULT,default=1) #mudar para ID
-    id_offer = models.ForeignKey(CadastroEmpresa, on_delete=models.SET_DEFAULT,default=1) #mudar para ID
+    id_provider = models.ForeignKey(CadastroCliente, on_delete=models.SET_DEFAULT,default=1)
+    id_offer = models.ForeignKey(CadastroEmpresa, on_delete=models.SET_DEFAULT,default=1)
     value = models.FloatField(max_length=20)
     amount = models.FloatField(max_length=20)
 

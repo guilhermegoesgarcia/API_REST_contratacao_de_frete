@@ -10,10 +10,18 @@ class CadastroEmpresa_ViewSet(viewsets.ModelViewSet):
     '''Exibindo todos os cadastros'''
     queryset = CadastroEmpresa.objects.all()
     serializer_class = CadastroEmpresa_Serializer
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
+    ordering_fields = ['name']
+    search_fields = ['name', 'doc']
+    filterset_fields = ['active']
 
 class CadastroCliente_ViewSet(viewsets.ModelViewSet):
     queryset = CadastroCliente.objects.all()
     serializer_class = CadastroCliente_Serializer
+    filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter]
+    ordering_fields = ['name']
+    search_fields = ['name', 'doc']
+    filterset_fields = ['active']
 
 class CadastroOferta_ViewSet(viewsets.ModelViewSet):
     queryset = CadastroOferta.objects.all()
